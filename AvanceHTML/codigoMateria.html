@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de Materia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/codigoMateria.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 p-0 sidebar">
+                <nav class="navbar navbar-expand-md navbar-dark flex-md-column align-items-start">
+                    <div class="text-center w-100 mt-3">
+                        <h2 class="title">TESTSUR</h2>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse w-100" id="menu">
+                        <nav class="nav flex-column text-center w-100">
+                            <a href="#" class="nav-link text-white btn-custom">Inicio</a>
+                            <a href="#" class="nav-link text-white btn-custom">Iniciar Sesión</a>
+                            <a href="#" class="nav-link text-white btn-custom">Perfil</a>
+                            <a href="#" class="nav-link text-white btn-custom">Materias</a>
+                            <a href="#" class="nav-link text-white btn-custom">Activar Quiz</a>
+                            <a href="#" class="nav-link text-white btn-custom">Agregar Usuario</a>
+                            <a href="#" class="nav-link text-white btn-custom">Editar Usuarios</a>
+                            <a href="#" class="nav-link text-white btn-custom">Código de Materia</a>
+                            <a href="#" class="nav-link text-white btn-custom">Cerrar Sesión</a>
+                        </nav>
+                    </div>
+                    <div class="text-center w-100 mt-3 mb-3">
+                        <img src="img/logo.png" alt="Logo ITSur" class="img-fluid" width="150">
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="content p-5">
+                    <h1 class="text-center">Código de Materia</h1>
+                    <hr class="main-line">
+                    <h2 class="text-center mt-4">Seleccione Materia</h2>
+                    <form class="mt-4 mx-auto text-center" style="max-width: 600px;">
+                        <div class="mb-3">
+                            <select id="selectMateria" class="form-select" required>
+                                <option value="">Seleccione una materia</option>
+                                <option value="100">Matemáticas</option>
+                                <option value="101">Historia</option>
+                                <option value="102">Programación</option>
+                            </select>
+                        </div>
+                        <div class="mt-4">
+                            <h2>Código</h2>
+                            <p id="codigoMateria" class="codigo">-</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript para actualizar el código de la materia seleccionada
+        const selectMateria = document.getElementById('selectMateria');
+        const codigoMateria = document.getElementById('codigoMateria');
+
+        selectMateria.addEventListener('change', () => {
+            const codigo = selectMateria.value;
+            codigoMateria.textContent = codigo ? codigo : '-';
+        });
+    </script>
+</body>
+</html>

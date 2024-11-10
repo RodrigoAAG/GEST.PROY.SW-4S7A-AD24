@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Quiz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/editarQuiz.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 p-0 sidebar">
+                <nav class="navbar navbar-expand-md navbar-dark flex-md-column align-items-start">
+                    <div class="text-center w-100 mt-3">
+                        <h2 class="title">TESTSUR</h2>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse w-100" id="menu">
+                        <nav class="nav flex-column text-center w-100">
+                            <a href="#" class="nav-link text-white btn-custom">Inicio</a>
+                            <a href="#" class="nav-link text-white btn-custom">Iniciar Sesión</a>
+                            <a href="#" class="nav-link text-white btn-custom">Perfil</a>
+                            <a href="#" class="nav-link text-white btn-custom">Materias</a>
+                            <a href="#" class="nav-link text-white btn-custom">Activar Quiz</a>
+                            <a href="#" class="nav-link text-white btn-custom">Agregar Usuario</a>
+                            <a href="#" class="nav-link text-white btn-custom">Editar Usuarios</a>
+                            <a href="#" class="nav-link text-white btn-custom">Código de Materia</a>
+                            <a href="#" class="nav-link text-white btn-custom">Cerrar Sesión</a>
+                        </nav>
+                    </div>
+                    <div class="text-center w-100 mt-3 mb-3">
+                        <img src="img/logo.png" alt="Logo ITSur" class="img-fluid" width="150">
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="content p-5">
+                    <h1 class="text-center">Editar Quiz</h1>
+                    <hr class="main-line">
+                    <form class="mt-4 mx-auto text-center" style="max-width: 600px;" id="quizForm">
+                        <div class="mb-3">
+                            <label for="materia" class="form-label">Seleccionar Materia</label>
+                            <select id="materia" class="form-select" required>
+                                <option value="">Seleccione una materia</option>
+                                <option value="Matemáticas">Matemáticas</option>
+                                <option value="Historia">Historia</option>
+                                <option value="Programación">Programación</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="unidad" class="form-label">Seleccionar Unidad</label>
+                            <select id="unidad" class="form-select" required>
+                                <option value="">Seleccione una unidad</option>
+                                <option value="Unidad 1">Unidad 1</option>
+                                <option value="Unidad 2">Unidad 2</option>
+                                <option value="Unidad 3">Unidad 3</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary mx-2" id="activarQuiz">Activar Quiz</button>
+                            <button type="submit" class="btn btn-danger mx-2" id="desactivarQuiz">Desactivar Quiz</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
