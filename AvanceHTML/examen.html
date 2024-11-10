@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/examen.css">
 </head>
-
 <body>
-    <h1>Examen</h1>
-</body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center p-3">
+                <img src="img/logo.png" alt="Logo ITSur" class="img-fluid mb-3" style="max-width: 150px;">
+                <h1 class="fw-bold">Examen 1 de la Unidad 1</h1>
+                <hr class="main-line">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <!-- Pregunta 1 -->
+                <div class="question-container mb-4">
+                    <h4 class="fw-bold">1. Pregunta con un enunciado claro y directo</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="question1Option1" required>
+                        <label class="form-check-label" for="question1Option1">
+                            Opción 1
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="question1Option2">
+                        <label class="form-check-label" for="question1Option2">
+                            Opción 2
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="question1Option3">
+                        <label class="form-check-label" for="question1Option3">
+                            Opción 3
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question1" id="question1Option4">
+                        <label class="form-check-label" for="question1Option4">
+                            Opción 4
+                        </label>
+                    </div>
+                </div>
 
+                <!-- Pregunta 2 -->
+                <div class="question-container mb-4">
+                    <h4 class="fw-bold">2. Otra pregunta interesante</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="question2Option1" required>
+                        <label class="form-check-label" for="question2Option1">
+                            Opción 1
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="question2Option2">
+                        <label class="form-check-label" for="question2Option2">
+                            Opción 2
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="question2Option3">
+                        <label class="form-check-label" for="question2Option3">
+                            Opción 3
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="question2" id="question2Option4">
+                        <label class="form-check-label" for="question2Option4">
+                            Opción 4
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Botón para finalizar -->
+                <div class="text-center mt-5">
+                    <button type="submit" class="btn btn-success btn-lg">Enviar Examen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

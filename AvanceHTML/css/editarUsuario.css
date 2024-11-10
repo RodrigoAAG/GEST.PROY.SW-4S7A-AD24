@@ -1,0 +1,39 @@
+.content {
+    padding-top: 20px;
+}
+
+form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+form .form-label {
+    font-weight: bold;
+}
+
+form .btn {
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #007bff; 
+    color: #ffffff; 
+    border: none; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+form .btn:hover {
+    background-color: #0056b3; 
+}
+
+h2 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}

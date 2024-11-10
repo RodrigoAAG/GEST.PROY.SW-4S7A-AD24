@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Quiz</title>
+    <title>Código de Materia</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/editarQuiz.css">
+    <link rel="stylesheet" href="css/codigoMateria.css">
 </head>
 <body>
     <div class="container-fluid">
@@ -42,30 +42,21 @@
             <!-- Main Content -->
             <div class="col-md-9">
                 <div class="content p-5">
-                    <h1 class="text-center">Editar Quiz</h1>
+                    <h1 class="text-center">Código de Materia</h1>
                     <hr class="main-line">
-                    <form class="mt-4 mx-auto text-center" style="max-width: 600px;" id="quizForm">
+                    <h2 class="text-center mt-4">Seleccione Materia</h2>
+                    <form class="mt-4 mx-auto text-center" style="max-width: 600px;">
                         <div class="mb-3">
-                            <label for="materia" class="form-label">Seleccionar Materia</label>
-                            <select id="materia" class="form-select" required>
+                            <select id="selectMateria" class="form-select" required>
                                 <option value="">Seleccione una materia</option>
-                                <option value="Matemáticas">Matemáticas</option>
-                                <option value="Historia">Historia</option>
-                                <option value="Programación">Programación</option>
+                                <option value="100">Matemáticas</option>
+                                <option value="101">Historia</option>
+                                <option value="102">Programación</option>
                             </select>
                         </div>
-                        <div class="mb-3">
-                            <label for="unidad" class="form-label">Seleccionar Unidad</label>
-                            <select id="unidad" class="form-select" required>
-                                <option value="">Seleccione una unidad</option>
-                                <option value="Unidad 1">Unidad 1</option>
-                                <option value="Unidad 2">Unidad 2</option>
-                                <option value="Unidad 3">Unidad 3</option>
-                            </select>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary mx-2" id="activarQuiz">Activar Quiz</button>
-                            <button type="submit" class="btn btn-danger mx-2" id="desactivarQuiz">Desactivar Quiz</button>
+                        <div class="mt-4">
+                            <h2>Código</h2>
+                            <p id="codigoMateria" class="codigo">-</p>
                         </div>
                     </form>
                 </div>
@@ -74,5 +65,15 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JavaScript para actualizar el código de la materia seleccionada
+        const selectMateria = document.getElementById('selectMateria');
+        const codigoMateria = document.getElementById('codigoMateria');
+
+        selectMateria.addEventListener('change', () => {
+            const codigo = selectMateria.value;
+            codigoMateria.textContent = codigo ? codigo : '-';
+        });
+    </script>
 </body>
 </html>
