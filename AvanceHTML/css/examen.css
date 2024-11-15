@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #343a40; /* Color neutro oscuro */
+    margin-bottom: 20px;
+}
+
+.question-container h4 {
+    color: #343a40;
+}
+
+.form-check-input:checked + .form-check-label {
+    font-weight: bold;
+    color: #007bff; /* Azul para resaltar */
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.main-line {
+    border-top: 2px solid #343a40;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.question-container {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
