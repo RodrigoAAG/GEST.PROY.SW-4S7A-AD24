@@ -1,0 +1,35 @@
+.content {
+    padding-top: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #2F7D32;
+}
+
+.form-select {
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.codigo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff; /* Azul para destacar el código */
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+hr.main-line {
+    border-top: 2px solid #2F7D32;
+    width: 80%;
+    margin: 0 auto;
+}

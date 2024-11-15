@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Examen</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/materiaInfo.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 p-0 sidebar">
+                <nav class="navbar navbar-expand-md navbar-dark flex-md-column align-items-start">
+                    <div class="text-center w-100 mt-3">
+                        <h2 class="title">TESTSUR</h2>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse w-100" id="menu">
+                        <nav class="nav flex-column text-center w-100">
+                            <a href="index.html" class="nav-link text-white btn-custom">Inicio</a>
+                            <a href="login.html" class="nav-link text-white btn-custom">Iniciar Sesión</a>
+                            <a href="perfil.html" class="nav-link text-white btn-custom">Perfil</a>
+                            <a href="materias.html" class="nav-link text-white btn-custom">Materias</a>
+                            <a href="editarQuiz.html" class="nav-link text-white btn-custom">Activar Quiz</a>
+                            <a href="ageragarUsuario.html" class="nav-link text-white btn-custom">Agregar Usuario</a>
+                            <a href="editarUsuario.html" class="nav-link text-white btn-custom">Editar Usuarios</a>
+                            <a href="materiaInfo.html" class="nav-link text-white btn-custom">Código de Materia</a>
+                            <a href="#" class="nav-link text-white btn-custom">Cerrar Sesión</a>
+                        </nav>
+                    </div>
+                    <div class="text-center w-100 mt-3 mb-3">
+                        <img src="img/logo.png" alt="Logo ITSur" class="img-fluid" width="150">
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="content p-5">
+                    <!-- El título se cargará dinámicamente -->
+                    <h1 class="text-center" id="examTitle">Cargando...</h1>
+                    <hr class="main-line">
+                    <div class="info-container mt-4">
+                        <div class="row">
+                            <div class="col-md-6 text-end">
+                                <h5><strong>Examen Activo:</strong></h5>
+                            </div>
+                            <div class="col-md-6 text-start">
+                                <h5 class="text-success">Sí</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 text-end">
+                                <h5><strong>Calificación:</strong></h5>
+                            </div>
+                            <div class="col-md-6 text-start">
+                                <h5>0/5</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="#" class="btn btn-primary btn-lg">Hacer el Examen</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Aquí puedes simular cómo el título se cargará dinámicamente
+        document.addEventListener('DOMContentLoaded', () => {
+            const examNumber = 2; // Ejemplo: número de examen
+            const unitNumber = 1; // Ejemplo: número de unidad
+            const titleElement = document.getElementById('examTitle');
+            titleElement.textContent = `Examen ${examNumber} de la Unidad ${unitNumber}`;
+        });
+    </script>
+</body>
+</html>
